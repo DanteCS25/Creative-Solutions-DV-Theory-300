@@ -1,15 +1,18 @@
-// Navbar.js
 import React, { useState } from 'react';
 import './navbar.css'; // Import CSS file for styling
 import logo from './content/Logo.png'; // Import logo image
 
 const Navbar = () => {
     const [selectedNavItem, setSelectedNavItem] = useState(null);
+    const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
     const handleNavItemClick = (index) => {
         setSelectedNavItem(index);
     };
 
+    const handleMobileNavToggle = () => {
+        setMobileNavOpen(!mobileNavOpen);
+    }
     return (
         <nav className="navbar">
             <div className="navbar-logo">
@@ -23,7 +26,7 @@ const Navbar = () => {
                     <a href="#Selector" className={`nav-link ${selectedNavItem === 1 ? 'selected' : ''}`} onClick={() => handleNavItemClick(1)}>About</a>
                 </li>
             </ul>
-            <button id='nav_button' className='right'><a href='#ComingSoon' style={{textDecoration: 'none', color: 'white'}}>Get the app</a></button>
+            <button id='nav_button'><a href='#ComingSoon' style={{textDecoration: 'none', color: 'white'}}>Get the app</a></button>
         </nav>
     );
 };

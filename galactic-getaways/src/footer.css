@@ -7,6 +7,26 @@
     padding-bottom: 90px;
 }
 
+@media (max-width: 768px) {
+    .auther,
+    .menu,
+    .item-508,
+    .item-509 {
+          margin-left: 0;
+      }
+  
+    .Follow {
+          position: static;
+          margin: 0;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: auto;
+          text-align: center;
+          margin-top: 20px;
+      }
+  }
+
 .auther {
     font-size: 18px;
     font-weight: 400;

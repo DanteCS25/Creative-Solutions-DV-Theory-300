@@ -97,11 +97,11 @@ Let your imagination soar and explore the endless possibilities with our feature
 ## Final-Outcome
 ### Demo Video
 
-[View Demonstration](https://youtu.be/K2TSUsroUAA)
+[View Demonstration]()
 
 ### Deployement Link
 
-[Deploy on Haroku](https://codegenius-1ab16d917280.herokuapp.com)
+[Deploy on Haroku]()
 
 ## Conclusion
 ### License
